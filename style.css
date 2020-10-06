@@ -1,136 +1,158 @@
-.container {
-    width: auto;
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px 250px; /* 5 colums */
-    grid-template-rows: 70px 80px 178px 385px 260px 195px 150px; /* 8 rows */
-    grid-gap: 2px;
+@media(min-width: 650px) {
+    .container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 250px); /* 5 colums */
+        grid-template-rows: auto; /* 8 rows */
+        grid-gap: 2px;
+        position: relative;
 
 
-    grid-template-areas: 
-        "logo logo logo logo fb"
-        "logo logo logo logo tw"
-        "logo logo logo logo img3"
-        "img4 img4 img5 img6 img7"
-        "img8 img9 img9 img10 img11"
-        "img8 img13 img14 img14 img15"
-        "img12 img13 img16 img17 img18"
-        "img19 img20 img20 . ."
-}
+        grid-template-areas: 
+            "logo logo logo logo fb"
+            "logo logo logo logo tw"
+            "logo logo logo logo img3"
+            "img4 img4 img5 img6 img7"
+            "img8 img9 img9 img10 img11"
+            "img8 img13 img14 img14 img15"
+            "img12 img13 img16 img17 img18"
+            "img19 img20 img20 . ."
+    }
 
-body {
-    border: solid gray 15px;
-}
+    .item {
+        width: 100%;
+        height: auto;
+        justify-items: end;
+    }
 
-.img1 {
-    grid-area: fb;
-}
+    body {
+        border: solid gray 15px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.img2 {
-    grid-area: tw;
-}
+    .img1 {
+        grid-area: fb;
+    }
 
-.img3 {
-    grid-area: img3;
-}
+    .img2 {
+        grid-area: tw;
+    }
 
-.img4 {
-    grid-area: img4;
-}
+    .img3 {
+        grid-area: img3;
+    }
 
-.img5 {
-    grid-area: img5;
-}
+    .img4 {
+        grid-area: img4;
+    }
 
-.img6 {
-    grid-area: img6;
-}
+    .img5 {
+        grid-area: img5;
+    }
 
-.img7 {
-    grid-area: img7;
-}
+    .img6 {
+        grid-area: img6;
+    }
 
-.img8 {
-    grid-area: img8;
-}
+    .img7 {
+        grid-area: img7;
+    }
 
-.img9 {
-    grid-area: img9;
-}
+    .img8 {
+        grid-area: img8;
+    }
 
-.img10 {
-    grid-area: img10;
-}
+    .img9 {
+        grid-area: img9;
+    }
 
-.img11 {
-    grid-area: img11;
-}
+    .img10 {
+        grid-area: img10;
+    }
 
-.img12 {
-    grid-area: img12;
-}
+    .img11 {
+        grid-area: img11;
+    }
 
-.img13 {
-    grid-area: img13;
-}
+    .img12 {
+        grid-area: img12;
+    }
 
-.img14 {
-    grid-area: img14;
-    align-items: center;
-}
+    .img13 {
+        grid-area: img13;
+    }
 
-.img15 {
-    grid-area: img15;
-}
+    .img14 {
+        grid-area: img14;
+        align-items: center;
+    }
 
-.img16 {
-    grid-area: img16;
-}
+    .img15 {
+        grid-area: img15;
+    }
 
-.img17 {
-    grid-area: img17;
-}
+    .img16 {
+        grid-area: img16;
+    }
 
-.img18 {
-    grid-area: img18;
-}
+    .img17 {
+        grid-area: img17;
+    }
 
-.img19 {
-    grid-area: img19;
-}
+    .img18 {
+        grid-area: img18;
+    }
 
-.img20 {
-    grid-area: img20;
-}
+    .img19 {
+        grid-area: img19;
+    }
 
-.logo {
-    grid-area: logo;
-}
+    .img20 {
+        grid-area: img20;
+    }
 
-li {
-    display: inline;
-    padding: 25px 20px;
-    
-}
+    .logo {
+        grid-area: logo;
+    }
 
-nav {
-    grid-area: nav;
-}
+    p {
+        grid-area: p;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        font-weight: bolder;
+    }
 
-ul {
-    text-decoration: none;
-}
+    li {
+        display: inline;
+        padding: 25px 20px;
+        
+    }
 
-nav  {
-    width: 100%;
-    background-color: gray;
-    margin: 0;
-    color: black;
-    padding: 10px 0px 10px 0px;
-    background-color: black;
-}
+    nav {
+        grid-area: nav;
+    }
 
-li a {
-    text-decoration: none;
-    width: auto;
-    color: white;
+    ul {
+        text-decoration: none;
+    }
+
+    nav  {
+        width: 100%;
+        background-color: gray;
+        margin: 0;
+        color: black;
+        padding: 10px 0px 10px 0px;
+        background-color: black;
+    }
+
+    a {
+        text-decoration: none;
+        width: auto;
+        color: white;
+    }
 }
